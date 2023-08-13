@@ -78,17 +78,21 @@ def registration():
 
     }
 
+    print(users_dict)
+
     if check_registration(users_dict):
         pass
 
 def check_registration(info):
+    frame.delete("error")
     for key, value in info.items():
         if not value.strip():
             frame.create_text(
                 220,
                 350,
                 text=f"{key} cannot be empty!",
-                fill= "red"
+                fill="red",
+                tags="error",
 
             )
             return False
