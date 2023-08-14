@@ -96,3 +96,4 @@ def check_registration(info):
 
             )
             return False
+
