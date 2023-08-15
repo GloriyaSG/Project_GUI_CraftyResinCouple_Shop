@@ -17,4 +17,3 @@ def create_frame():
 
 root = create_root()
 frame = create_frame()
-
