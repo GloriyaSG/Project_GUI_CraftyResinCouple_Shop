@@ -1,6 +1,7 @@
 from tkinter import Button, Entry
 from canvas import root, frame
 from helpers import screen_cleaner
+from json import loads
 
 
 def entry_render():
@@ -29,6 +30,15 @@ def entry_render():
     frame.create_window(350, 320, window=register_button)
     frame.create_window(350,260, window=login_button)
 
+def client_login():
+
+    info_data = []
+
+    with open("data_base/users_info.txt","r") as users_file:
+        for line in users_file:
+            info_data.append(loads(line))
+
+    return info_data
 
 def register():
     screen_cleaner()
@@ -78,10 +88,9 @@ def registration():
 
     }
 
-    print(users_dict)
-
     if check_registration(users_dict):
         pass
+
 
 def check_registration(info):
     frame.delete("error")
@@ -96,3 +105,10 @@ def check_registration(info):
 
             )
             return False
+
+    info_data = client_login()
+
+    print(info_data)
+
+
+
