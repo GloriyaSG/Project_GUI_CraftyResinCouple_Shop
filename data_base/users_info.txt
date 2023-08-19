@@ -1,2 +1,2 @@
-{"First Name": "Gloriya", "Last Name": "Gerginova", "Username": "Gloriya1995", "Password": "Glori1234", "Confirm Password": "Glori1234"}
+{"First name": "x", "Last name": "x", "Username": "x", "Password": "x", "Confirm Password": "x"}
 

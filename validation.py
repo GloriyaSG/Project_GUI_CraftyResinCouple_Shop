@@ -109,6 +109,3 @@ def check_registration(info):
     info_data = client_login()
 
     print(info_data)
-
-
-
