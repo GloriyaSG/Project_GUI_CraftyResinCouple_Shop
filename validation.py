@@ -70,6 +70,7 @@ def register():
     frame.create_window(220,300, window=register_button)
 
 
+
 first_name_box = Entry(root, bd=0)
 last_name_box = Entry(root, bd=0)
 username_box = Entry(root, bd=0)
@@ -109,3 +110,4 @@ def check_registration(info):
     info_data = client_login()
 
     print(info_data)
+
